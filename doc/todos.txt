@@ -1,0 +1,3 @@
+- get rid of ArtistDAO - this is now useless (or keep as example class of direct JDBC usage)
+- introduce liquibase for initializing db
+- implement add artist form 

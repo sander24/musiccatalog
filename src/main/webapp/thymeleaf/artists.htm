@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Thymeleaf</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<p th:text="'First ' + ${thyme} + '!'" />
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Country</th>
+      <th>Year started</th>
+    </tr>
+    <tr th:each="artist : ${artists}">
+      <td th:text="${artist.name}">.</td>
+      <td th:text="${artist.countryCode}">.</td>
+      <td th:text="${artist.startYear}">.</td>
+    </tr>
+  </table>
+
+
+</body>
+</html>
